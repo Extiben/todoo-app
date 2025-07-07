@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f3e, #1d1d3b);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.lista-tareas-container {
+  width: 100%;
+  max-width: 600px;
+  background: #2a2a40;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+.lista-tareas-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #00cec9;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+.form-tarea {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-tarea input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #00cec9;
+  font-size: 1rem;
+  background: #f4f4f4;
+  color: #222;
+  transition: border-color 0.3s ease;
+}
+
+.form-tarea input:focus {
+  border-color: #0984e3;
+  outline: none;
+}
+
+.form-tarea button {
+  background-color: #00cec9;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-tarea button:hover {
+  background-color: #26dad6;
+}
+
+/* Filtro */
+.filtro {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtro select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #00cec9;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Lista de tareas */
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.tarea {
+  background-color: #383854;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.tarea:hover {
+  background-color: #4c4c6e;
+}
+
+.tarea-titulo {
+  flex: 1;
+  font-size: 1rem;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tarea-titulo.completa {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Botones de acción */
+.tarea-acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tarea-acciones button {
+  padding: 0.4rem 0.7rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: #0984e3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tarea-acciones button:hover {
+  background-color: #74b9ff;
+  transform: translateY(-1px);
+}
+
+/* Edición */
+.modo-edicion input {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #00cec9;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.modo-edicion button {
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+}
+
+/* Error */
+.mensaje-error {
+  color: #ff7675;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
